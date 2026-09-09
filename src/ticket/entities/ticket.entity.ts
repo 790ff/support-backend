@@ -25,6 +25,9 @@ export class Ticket {
   })
   priority: 'Low' | 'Medium' | 'High';
 
+  @Column({ nullable: true })
+  email?: string;
+
   @CreateDateColumn()
   createdAt: Date;
 
