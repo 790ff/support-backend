@@ -28,6 +28,9 @@ export class Ticket {
   @Column({ nullable: true })
   email?: string;
 
+  @Column({ nullable: true })
+  clickupId?: string;
+
   @CreateDateColumn()
   createdAt: Date;
 
