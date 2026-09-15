@@ -17,6 +17,7 @@
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,
+    "useUnknownInCatchVariables": false,
     "strictPropertyInitialization": false
   }
 }
