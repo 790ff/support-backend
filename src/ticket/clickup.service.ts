@@ -46,6 +46,16 @@ export class ClickUpService {
 
     return response.data;
   }
+
+  async getTaskById(taskId: string): Promise<any> {
+    const response = await axios.get(`${this.clickupApiUrl}/task/${taskId}`, {
+      headers: {
+        Authorization: this.clickupApiKey,
+      },
+    });
+
+    return response.data;
+  }
   async getWebhooks(): Promise<any[]> {
     try {
       const response = await axios.get(
